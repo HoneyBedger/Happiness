@@ -147,10 +147,10 @@ shinyServer(
                    mapping = aes(xintercept = num[1], colour="black")) +
         geom_text(data = happiness,
                    mapping = aes(x = (num[1] + 10), y = 6.5,
-                                 label = Country[num[1]], "   ")) +
+                                 label = Country[num[1]])) +
         geom_text(data = happiness,
                    mapping = aes(x = (num[1] + 10), y = 6.0,
-                                 label = round(Happiness_Level[num[1]], 3), "    "))
+                                 label = round(Happiness_Level[num[1]], 3)))
      print(plot)
     }))
 }
